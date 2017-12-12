@@ -31,14 +31,13 @@ corresponding labels, such as LOC, PERSON, DATE etc, so the model learns depende
 Possibly training the model without the entity changes, or implementing a pointer-generated network could generate more readable 
 and outputs.
 
-Original Text:
+<i>Original Text:</i>
 <br>'Archbishop Albrecht of Mainz and Magdeburg did not reply to Luther\'s letter containing the 95 Theses. He had the theses checked for heresy and in December 1517 forwarded them to Rome. He needed the revenue from the indulgences to pay off a papal dispensation for his tenure of more than one bishopric. As Luther later noted, "the pope had a finger in the pie as well, because one half was to go to the building of St Peter's Church in Rome".'
 
-##################################################
-<br>Converted Text:
+<i>Converted Text:</i>
 <br>ORG PERSON reply ORG 's letter containing 95 theses theses checked heresy DATE forwarded GPE needed revenue indulgences pay papal dispensation tenure bishopric ORG later noted pope finger pie CARDINAL building ORG GPE
 
-Generated Questions:
- -- : what was the issue of ORG <EOS>
- -- : what was the issue of ORG in GPE <EOS>
- -- : what was ORG 's stance of the printed taken in GPE <EOS>
+<i>Generated Questions:</i>
+<br> -- : what was the issue of ORG <EOS>
+<br> -- : what was the issue of ORG in GPE <EOS>
+<br> -- : what was ORG 's stance of the printed taken in GPE <EOS>
