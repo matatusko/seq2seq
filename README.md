@@ -1,7 +1,7 @@
 ## seq2seq
 
-Universal sequence-to-sequence model with attention and beam search for inference decoding. Can be used for text summarization, 
-neural machine translation, question generation etc. 
+Universal sequence-to-sequence model with attention and beam search for inference decoding. Should work for text summarization, 
+neural machine translation, question generation etc. although might require different hyperparameters or data preprocessing.
 
 In my case I've used it for question generation - I've trained the model on reversed [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/)
 dataset with paragraphs as my input and questions as my targets. The SQuAD parsing script is also included in the depository. 
@@ -28,4 +28,17 @@ corresponding labels, such as LOC, PERSON, DATE etc, so the model learns depende
 
 ## Sample
 
-coming soon
+Possibly training the model without the entity changes, or implementing a pointer-generated network could generate more readable 
+and outputs.
+
+Original Text:
+'Archbishop Albrecht of Mainz and Magdeburg did not reply to Luther\'s letter containing the 95 Theses. He had the theses checked for heresy and in December 1517 forwarded them to Rome. He needed the revenue from the indulgences to pay off a papal dispensation for his tenure of more than one bishopric. As Luther later noted, "the pope had a finger in the pie as well, because one half was to go to the building of St Peter's Church in Rome".'
+
+##################################################
+Converted Text:
+ORG PERSON reply ORG 's letter containing 95 theses theses checked heresy DATE forwarded GPE needed revenue indulgences pay papal dispensation tenure bishopric ORG later noted pope finger pie CARDINAL building ORG GPE
+
+Generated Questions:
+ -- : what was the issue of ORG <EOS>
+ -- : what was the issue of ORG in GPE <EOS>
+ -- : what was ORG 's stance of the printed taken in GPE <EOS>
