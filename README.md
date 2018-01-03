@@ -28,8 +28,7 @@ corresponding labels, such as LOC, PERSON, DATE etc, so the model learns depende
 
 ## Sample
 
-Possibly training the model without the entity changes, or implementing a pointer-generated network could generate more readable 
-and outputs.
+The model doesn't produce any staggering results for the question generation task with the dataset I've used, however, I can imaging with more examples the output would make more sense. Possibly training the model without changing the entities with their labels, or more experimenting with data preprocessing (lemmatization, keeping only important nouns/verbs etc) could also yield better retuls.
 
 <i>Original Text:</i>
 <br>'Archbishop Albrecht of Mainz and Magdeburg did not reply to Luther\'s letter containing the 95 Theses. He had the theses checked for heresy and in December 1517 forwarded them to Rome. He needed the revenue from the indulgences to pay off a papal dispensation for his tenure of more than one bishopric. As Luther later noted, "the pope had a finger in the pie as well, because one half was to go to the building of St Peter's Church in Rome".'
